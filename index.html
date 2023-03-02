@@ -258,14 +258,14 @@
                     </picture>
                 </div>
                 <div class="contact_cont">
-                    <form
+                    <form id="my_form"
                         action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScVv7svvSz4fFKZIiBm86GwEqUqineXtykLnhNVN4cIA-4ORw/formResponse"
-                        method="post">
+                        method="post" target="hidden_iframe" onsubmit="submitted=true;">
                         <div class="contact_message">
                             <div class="contact_form">
                                 <div class="item">
                                     <label class="label" for="name">Name</label><input id="name" type="text"
-                                        name="entry.527852064">
+                                        name="entry.527852064" placeholder="YOR DESIGN">
                                 </div>
                                 <div class="item">
                                     <label class="label" for="email">Email</label><input id="email" type="email"
@@ -273,7 +273,7 @@
                                 </div>
                                 <div class="item">
                                     <label class="label" for="textarea-item">Message</label><textarea id="textarea-item"
-                                        name="entry.1571912662"></textarea>
+                                        name="entry.1571912662" placeholder="ご依頼・ご相談など"></textarea>
                                 </div>
                             </div>
                             <div class="contact_detail_btn">
@@ -294,6 +294,45 @@
         </div>
     </footer>
 
+    <script type="text/javascript">
+        var submitted = false;
+
+        // Form Validator
+        $(document).ready(function () {
+            $("#form").validate({
+                rules: {
+                    "entry.1852203743": {
+                        required: true
+                    },
+                    "entry.851752151": {
+                        required: true
+                    },
+                    "entry.1469636170": {
+                        required: true,
+                        email: true
+                    }
+                },
+                messages: {
+                    "entry.1852203743": {
+                        required: "必須項目です"
+                    },
+                    "entry.851752151": {
+                        required: "必須項目です"
+                    },
+                    "entry.1469636170": {
+                        required: "必須項目です",
+                        email: "必須項目です"
+                    }
+                },
+                submitHandler: function (form) { // for demo
+                    form.submit();
+                }
+            });
+
+        });
+    </script>
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display: none"
+        onload="if(submitted)  {window.location='https://docs.google.com/forms/u/0/d/e/1FAIpQLScVv7svvSz4fFKZIiBm86GwEqUqineXtykLnhNVN4cIA-4ORw/formResponse';}"></iframe>
 
     <script src="js/script.js">
 
