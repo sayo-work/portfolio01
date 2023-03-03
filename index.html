@@ -281,6 +281,12 @@
                             </div>
                         </div>
                     </form>
+                    <script type="text/javascript">
+                        var submitted = false;
+                    </script>
+                    <iframe name="hidden_iframe" id="hidden_iframe" style="display: none"
+                        onload="if(submitted)  {window.location='thanks.html'}"></iframe>
+
                 </div>
             </div>
         </section>
@@ -293,46 +299,6 @@
             <span class="footer_rightbar"></span>
         </div>
     </footer>
-
-    <script type="text/javascript">
-        var submitted = false;
-
-        // Form Validator
-        $(document).ready(function () {
-            $("#form").validate({
-                rules: {
-                    "entry.1852203743": {
-                        required: true
-                    },
-                    "entry.851752151": {
-                        required: true
-                    },
-                    "entry.1469636170": {
-                        required: true,
-                        email: true
-                    }
-                },
-                messages: {
-                    "entry.1852203743": {
-                        required: "必須項目です"
-                    },
-                    "entry.851752151": {
-                        required: "必須項目です"
-                    },
-                    "entry.1469636170": {
-                        required: "必須項目です",
-                        email: "必須項目です"
-                    }
-                },
-                submitHandler: function (form) { // for demo
-                    form.submit();
-                }
-            });
-
-        });
-    </script>
-    <iframe name="hidden_iframe" id="hidden_iframe" style="display: none"
-        onload="if(submitted)  {window.location='https://docs.google.com/forms/u/0/d/e/1FAIpQLScVv7svvSz4fFKZIiBm86GwEqUqineXtykLnhNVN4cIA-4ORw/formResponse';}"></iframe>
 
     <script src="js/script.js">
 
