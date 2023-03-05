@@ -992,7 +992,6 @@ body {
     .top_wrap {
         flex-direction: column-reverse;
         max-width: 727px;
-        margin-top: 0 auto;
     }
     
     #particle-canvas {
@@ -1009,7 +1008,7 @@ body {
         max-width: 727px;
     }
     
-    .top_title img {
+    .top_title_ing {
         margin-top: 15px;
         padding: 0 30px;
         width: 107px;
@@ -1163,9 +1162,14 @@ body {
     }
     
     .abot_icon {
-        margin: 0 41%;
+        margin: 0 auto;
     }
 
+    .abot_icon img {
+        width: 60%;
+        padding-bottom: 14px;
+    }
+    
     .about_leftbar{
         height: 80px;
     }
@@ -1174,6 +1178,10 @@ body {
         height: 80px;
     }
 
+    .about_cont{
+        border-left: none;
+    }
+    
     /* コンタクト */
     .contact_wrap{
         display: block;
@@ -1283,6 +1291,8 @@ body {
 
     main {
         border: solid #f4f2db;
+        border-left: none;
+        border-right: none;
     }
 
     .text_bar {
@@ -1316,9 +1326,9 @@ body {
     }    
     
     .text p {
-        width: 98%;
+        width: 100%;
         font-size: 17px;
-        padding: 5% 7%;
+        padding-top: 5%;
         margin: 0 auto;
     }    
     
@@ -1383,6 +1393,10 @@ body {
         margin: 0 auto;
     }
 
+    .works_inner {
+        height: 90px;
+    }
+
     .works_footer_leftbar{
         max-width: 50%;
         height: 40px;
@@ -1405,19 +1419,21 @@ body {
         height: 40px; 
     }
 
+    .works_text {
+        font-size: 16px;
+    }
+
     .about_text p {
-        width: 98%;
+        width: 100%;
         font-size: 17px;
-        padding: 5% 7%;
         margin: 0 auto;
     }
     
     .about_text ul {
-        width: 98%;
+        width: 100%;
         display: flex;
         justify-content: space-between;
-        margin: 0 auto;
-        padding: 0 7%;
+        margin: 0 auto;   
     }
     
     .about_text li {
@@ -1430,6 +1446,7 @@ body {
         display: block;
         margin-top: 10%;
         padding-bottom: 5%;
+        box-sizing: border-box;
     }
     
     .abot_graphic {
@@ -1443,10 +1460,6 @@ body {
     
     .about_rightbar{
         height: 40px;
-    }
-    
-    .works_footer_leftbar img {
-        display: none;
     }
     
     .text_item {
@@ -1463,10 +1476,6 @@ body {
 
     .text_right {
         width: 100%;
-    }
-
-    .works_footer_leftbar img {
-        display: none;
     }
 
     .middle_inner_wrap {
