@@ -442,8 +442,9 @@ a:hover .works_inner {
 
 .about_text li {
     font-size: 15px;
-    padding: 0 6%;
+    padding-right: 6%;
     border-right: solid #f4f2db;
+    margin: 0 auto;
 }
 
 .about_text li:last-child {
@@ -758,7 +759,7 @@ body {
 .text_right_inner li {
     display: flex;
     padding: 5% 0;
-    border-bottom: solid #f4f2db;
+    border-bottom: 0.8px solid #f4f2db;
 }
 
 .text_right_inner li:last-child {
@@ -766,7 +767,7 @@ body {
 }
 
 .text_item {
-    width: 25%;
+    width: 30%;
     text-align-last: justify;
     padding: 0 15% 0 5%;
 }
@@ -810,7 +811,7 @@ body {
 }
 
 .middle_wrap img {
-    width: 85%;
+    width: 86%;
     display: block;
     margin: 0 auto;
 }
@@ -940,7 +941,7 @@ body {
 
 .text_item {
     max-width: 100px;
-    padding: 0 50px 0 26px;
+   
     white-space: nowrap;
 }
 
@@ -950,6 +951,10 @@ body {
 
 .middle_left_btn {
     margin-right: 270px;
+}
+
+.text_left p {
+    font-size: 16px;
 }
 
 .text_right_inner li {
@@ -1370,7 +1375,7 @@ body {
     }  
     
     .text_right_inner {
-        padding: 7% 0;
+        padding: 0;
         border-left: solid #f4f2db;
         border-right: solid #f4f2db;
     }
@@ -1388,6 +1393,7 @@ body {
     
     .text_right_inner li {
         font-size: 17px;
+        justify-content: space-between;
     }
 
     .middle_wrap {
@@ -1518,8 +1524,7 @@ body {
     }
 
     .text_item {
-        padding: 0 13% 0 5%;
-        white-space: nowrap;
+        padding-left: 10%;
     }
 
     .text_left {
@@ -1565,7 +1570,8 @@ body {
     }
     
     .contact_detail_btn {
-        margin: 0 40%;
+        display: flex;
+        justify-content: center;
     }
 
     .contact_cont {
@@ -1617,15 +1623,28 @@ body {
 
 @media screen and (max-width:600px){
     /* 追加レスポンシブ */
-    .about_text li{
-        padding: 0 5%;
-        font-size: 13px;
-    }
-
-    
+.about_text li{
+    padding: 0 5%;
+    font-size: 13px;
 }
+
+.text_detail {
+    width: 55%;
+}
+
+.text_item {
+    padding-left: 5%;
+}
+ 
+.text_right_inner li {
+    font-size: 15px;
+}
+
+}
+
 @media screen and (max-width:500px){
     /* 追加レスポンシブ */
+
 
 .about_text ul {
     display: block;
