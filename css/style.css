@@ -1474,6 +1474,8 @@ body {
     
     .works_footer_rightbar {
         height: 38px;
+        border-bottom: solid #f4f2db;
+        border-left: solid #f4f2db;
         box-sizing: border-box;
     }
 
