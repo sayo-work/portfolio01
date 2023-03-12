@@ -1404,11 +1404,6 @@ body {
         overflow: scroll;
     }
 
-    .middle_bar {
-        border-right: none;
-        border-left: none;
-    }
-
     .main_wrap {
         display: block;
         max-width: 767px;
@@ -1587,8 +1582,7 @@ body {
 
     .middle_bar {
         height: 50px;
-        border-left: none;
-        border-right: solid #f4f2db;
+        
     }
     
     .under_bar {
