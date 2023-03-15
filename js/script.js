@@ -21,7 +21,7 @@ $('.target').slideToggle();
 var btnText = $('.btn').text();
 
 if(btnText=='モットミル'){
-  $('.btn').text('モトニモドル');
+  $('.btn').text('モトニモドス');
 }else{
   $('.btn').text('モットミル');
 }
